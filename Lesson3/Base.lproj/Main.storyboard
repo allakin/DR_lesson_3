@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zu9-t1-xI2">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcx-sO-j6V">
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-9y-xt0"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tPO-1L-t1c">
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WpL-AW-LSi">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="Khy-6o-OfY"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNP-ih-urL">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raj-Zj-b4r">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WeG-9y-xt0" firstAttribute="top" secondItem="tPO-1L-t1c" secondAttribute="bottom" constant="66" id="0Qg-MM-Xdq"/>
+                                    <constraint firstItem="WeG-9y-xt0" firstAttribute="leading" secondItem="zu9-t1-xI2" secondAttribute="leading" constant="178" id="6ek-Mc-vOG"/>
+                                    <constraint firstItem="Raj-Zj-b4r" firstAttribute="bottom" secondItem="zu9-t1-xI2" secondAttribute="bottomMargin" id="7sH-aG-MfJ"/>
+                                    <constraint firstItem="UNP-ih-urL" firstAttribute="centerX" secondItem="zu9-t1-xI2" secondAttribute="centerX" id="B0k-qO-lqj"/>
+                                    <constraint firstItem="UNP-ih-urL" firstAttribute="top" secondItem="zu9-t1-xI2" secondAttribute="top" constant="31" id="BDf-tb-hHM"/>
+                                    <constraint firstItem="WeG-9y-xt0" firstAttribute="leading" secondItem="rcx-sO-j6V" secondAttribute="leading" id="M0v-Jx-znS"/>
+                                    <constraint firstItem="UNP-ih-urL" firstAttribute="centerX" secondItem="WpL-AW-LSi" secondAttribute="centerX" id="Pzt-43-XuS"/>
+                                    <constraint firstItem="Raj-Zj-b4r" firstAttribute="top" secondItem="zu9-t1-xI2" secondAttribute="top" constant="851" id="Q6g-iK-a4Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="tPO-1L-t1c" secondAttribute="trailing" constant="127" id="TXG-bJ-Kns"/>
+                                    <constraint firstItem="tPO-1L-t1c" firstAttribute="top" secondItem="zu9-t1-xI2" secondAttribute="top" constant="424" id="WKi-WW-lsi"/>
+                                    <constraint firstItem="WpL-AW-LSi" firstAttribute="centerX" secondItem="tPO-1L-t1c" secondAttribute="centerX" id="cNd-d9-LSE"/>
+                                    <constraint firstItem="WeG-9y-xt0" firstAttribute="centerX" secondItem="Raj-Zj-b4r" secondAttribute="centerX" id="dQa-MZ-LvO"/>
+                                    <constraint firstItem="rcx-sO-j6V" firstAttribute="top" secondItem="WeG-9y-xt0" secondAttribute="bottom" constant="52" id="ygJ-0O-B0W"/>
+                                    <constraint firstItem="WpL-AW-LSi" firstAttribute="top" secondItem="zu9-t1-xI2" secondAttribute="top" constant="180" id="zei-w9-X9w"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zu9-t1-xI2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7c9-g2-Swt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zu9-t1-xI2" secondAttribute="trailing" constant="-16" id="GYA-eJ-xlS"/>
+                            <constraint firstItem="zu9-t1-xI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Vdx-8q-ilB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zu9-t1-xI2" secondAttribute="bottom" id="b4l-3P-L8A"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
